@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قائمة التسوق الأسبوعية</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- تحميل مكتبات PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+
+  <body>
+    <div align="center">
+      <h1>WEEKLY SHOPPING LIST - الـإحتياجـات الـإسبوعية</h1>
+    </div>
+
+    <div class="table-wrapper">
+      <table border="2">
+        <tr>
+          <!-- الفواكه -->
+          <td>
+            <h2>🍉 Fruits - الفواكة</h2>
+            <ul>
+              <li>
+                🍎 Apple – تفاح
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍌 Banana – موز
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍊 Orange – برتقال
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍇 Grapes – عنب
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍓 Strawberry – فراولة
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥭 Mango – مانجو
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥝 Kiwi – كيوي
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍐 Pear – كمثرى
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍑 Peach – خوخ
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍉 Watermelon – بطيخ
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍈 Melon – شمّام
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍋 Lemon – ليمون
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥑 Avocado – أفوكادو
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🫐 Blueberry – توت أزرق
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍒 Raspberry – توت أحمر
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🌰 Dates – تمر
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍊 Pomegranate – رمان
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍈 Apricot – مشمش
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍍 Pineapple – أناناس
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍏 Green Apple – تفاح أخضر
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥥 Coconut – جوز هند
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍅 Tomato (Fruit type) – طماطم (فاكهة)
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍋 Lime – لايم
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+            </ul>
+          </td>
+
+          <!-- نفس الشيء لخضار، بروتينات، كربوهيدرات -->
+          <!-- راح أرسل لك باقي الجدول في الجزء الثاني مباشرة عشان ما يكون ثقيل عليك أو صعب النسخ دفعة وحدة 👌 -->
+
+          <!-- زر تحميل PDF -->
+
+          <!-- عمود الخضار -->
+          <td>
+            <h2>🥬 Vegetables - الخضار</h2>
+            <ul>
+              <li>
+                🥔 بطاطس | Potato
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍅 طماطم | Tomato
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🧅 بصل | Onion
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🧄 ثوم | Garlic
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥕 جزر | Carrot
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥒 خيار | Cucumber
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥬 خس | Lettuce
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🌶 فلفل حار | Chili Pepper
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🫑 فلفل رومي | Bell Pepper
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥦 بروكلي | Broccoli
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍆 باذنجان | Eggplant
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🌽 ذرة | Corn
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥗 بقدونس | Parsley
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🌿 نعناع | Mint
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🪴 كزبرة | Coriander
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🌱 شبت | Dill
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🌿 كراث | Leek
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥬 كرنب | Cabbage
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥬 ملفوف أبيض | White Cabbage
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🟥 ملفوف أحمر | Red Cabbage
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍄 مشروم | Mushroom
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🟢 بامية | Okra
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🧃 شمندر | Beetroot
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+            </ul>
+          </td>
+
+          <!-- عمود البروتينات -->
+          <td>
+            <h2>🥩 Proteins - البروتينات</h2>
+            <ul>
+              <li>
+                🍗 Chicken – دجاج
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥩 Beef – لحم بقري
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍖 Lamb – لحم غنم
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🐟 Fish – سمك
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🦐 Shrimp – روبيان
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🦑 Squid – حبار
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍳 Eggs – بيض
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🧀 Cheese – جبن
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥛 Milk – حليب
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥜 Peanut – فستق
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🌰 Almond – لوز
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥥 Coconut (dried) – جوز هند مجفف
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🫘 Beans – فاصوليا
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🌱 Lentils – عدس
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🧆 Falafel – فلافل
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍔 Minced Meat – لحم مفروم
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥓 Turkey – ديك رومي
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🧈 Yogurt – زبادي
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🐚 Clams – محار
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🦪 Oysters – أصداف بحرية
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🌰 Cashew – كاجو
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥜 Hazelnut – بندق
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🫘 Chickpeas – حمص
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+            </ul>
+          </td>
+          <!-- عمود الكربوهيدرات -->
+          <td>
+            <h2>🍞 Carbohydrates - الكربوهيدرات</h2>
+            <ul>
+              <li>
+                🍞 خبز | Bread
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥖 خبز فرنسي | Baguette
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥯 خبز دائري | Bagel
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥨 كعك مملح | Pretzel
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍚 أرز أبيض | White Rice
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍙 أرز لزج | Sticky Rice
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍛 أرز بالكاري | Curried Rice
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍜 نودلز | Noodles
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍝 مكرونة | Pasta
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍠 بطاطا حلوة | Sweet Potato
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥔 بطاطس | Potato
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🌽 ذرة | Corn
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🫓 خبز مسطح | Flatbread
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥟 دامبلنغ | Dumplings
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🧇 وافل | Waffle
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥞 فطائر | Pancakes
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥐 كرواسون | Croissant
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥯 توست | Toast
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥜 زبدة الفول السوداني | Peanut Butter
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍩 دونات | Donut
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🍪 بسكويت | Cookies
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🥮 كعكة القمر | Mooncake
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+              <li>
+                🎂 كيك | Cake
+                <input type="number" min="0" value="0" class="counter" />
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ✅ زر تحميل PDF -->
+    <div align="center" style="margin-top: 20px">
+      <button onclick="generatePDF()">📥 تحميل القائمة PDF</button>
+    </div>
+
+    <!-- ✅ ربط ملف جافا سكربت -->
+    <script src="script.js"></script>
+  </body>
+</html>

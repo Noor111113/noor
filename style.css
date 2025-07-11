@@ -1,0 +1,141 @@
+/* ✅ إعدادات أساسية */
+body {
+  font-family: Arial, Tahoma, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #222;
+  direction: rtl; /* لدعم اللغة العربية */
+}
+
+/* ✅ عنوان الصفحة */
+h1,
+h2 {
+  text-align: center;
+  color: #0078d7;
+  margin-bottom: 20px;
+}
+
+/* ✅ تنسيق الجداول */
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+}
+
+td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+  text-align: right; /* عشان العربي يطلع مضبوط */
+  white-space: nowrap;
+}
+
+/* ✅ القوائم داخل الأعمدة */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed #eee;
+  font-size: 16px;
+}
+
+/* ✅ مدخل الرقم */
+input.counter {
+  width: 60px;
+  padding: 6px;
+  font-size: 15px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* ✅ زر تحميل PDF */
+button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* ✅ روابط */
+a {
+  color: #0078d7;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ تحسين للطباعة وتصدير PDF */
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+
+  button,
+  a {
+    display: none;
+  }
+
+  input.counter {
+    border: none;
+    background: none;
+    font-weight: bold;
+  }
+
+  td {
+    border: 1px solid #999;
+  }
+}
+
+/* ✅ توافق الأجهزة الصغيرة */
+@media screen and (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    margin-bottom: 10px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input.counter {
+    margin-top: 6px;
+    width: 100%;
+  }
+}
